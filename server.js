@@ -24,6 +24,17 @@ mongoose.connect(process.env.MONGO_URI, {
     .catch(err => console.log('❌ DB Connection Error:', err.message));
 
 // Routes
+app.get('/', (req, res) => {
+    res.json({
+        message: 'Boilerplate API Server',
+        status: 'Running',
+        endpoints: {
+            auth: '/api/auth',
+            test: '/test'
+        }
+    });
+});
+
 app.use('/api/auth', authRoutes);
 
 app.get('/test', (req, res) => {
@@ -32,17 +43,28 @@ app.get('/test', (req, res) => {
 });
 
 const PORT = process.env.PORT || 5000;
-app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+
+// Only listen if not in serverless environment (Vercel)
+if (process.env.NODE_ENV !== 'production') {
+    app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+}
+
+// Export for Vercel serverless
+module.exports = app;
 
 // Global Error Handlers
 process.on('unhandledRejection', (err) => {
     console.log('❌ UNHANDLED REJECTION! Shutting down...');
     console.log(err.name, err.message);
-    process.exit(1);
+    if (process.env.NODE_ENV !== 'production') {
+        process.exit(1);
+    }
 });
 
 process.on('uncaughtException', (err) => {
     console.log('❌ UNCAUGHT EXCEPTION! Shutting down...');
     console.log(err.name, err.message);
-    process.exit(1);
+    if (process.env.NODE_ENV !== 'production') {
+        process.exit(1);
+    }
 });
