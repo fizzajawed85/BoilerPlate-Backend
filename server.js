@@ -1,9 +1,4 @@
 require('dotenv').config();
-const dns = require('dns');
-
-// Force Google DNS to bypass local network SRV resolution issues
-dns.setServers(['8.8.8.8', '8.8.4.4']);
-
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
@@ -16,10 +11,8 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-// DB Connection
-mongoose.connect(process.env.MONGO_URI, {
-    family: 4 // Force IPv4 to avoid DNS SRV issues in some networks
-})
+// DB Connection - Simplified for Vercel serverless
+mongoose.connect(process.env.MONGO_URI)
     .then(() => console.log('MongoDB Connected'))
     .catch(err => console.log('❌ DB Connection Error:', err.message));
 
