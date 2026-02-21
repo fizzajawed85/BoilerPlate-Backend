@@ -1,0 +1,52 @@
+[
+  {
+    "_id": "sa1v5ph3vmlw33eya",
+    "createdAt": "2026-02-21T08:55:54.994Z",
+    "updatedAt": "2026-02-21T08:55:54.994Z",
+    "userId": "18bllxrlpmlw095kz",
+    "title": "Blood Test",
+    "description": "CBC",
+    "fileUrl": "",
+    "recordType": "Lab Report"
+  },
+  {
+    "_id": "9ibgx7fjcmlw344xw",
+    "createdAt": "2026-02-21T08:56:28.676Z",
+    "updatedAt": "2026-02-21T08:56:28.676Z",
+    "userId": "18bllxrlpmlw095kz",
+    "title": "ANA",
+    "description": "Test For Lopus",
+    "fileUrl": "",
+    "recordType": "Lab Report"
+  },
+  {
+    "_id": "cg7rptsqymlw74ax3",
+    "createdAt": "2026-02-21T10:48:34.887Z",
+    "updatedAt": "2026-02-21T10:48:34.887Z",
+    "userId": "18bllxrlpmlw095kz",
+    "title": "Chest ",
+    "description": "CT - SCAN ",
+    "fileUrl": "",
+    "recordType": "Other"
+  },
+  {
+    "_id": "yhhtip1tamlw8dqrr",
+    "createdAt": "2026-02-21T11:23:54.951Z",
+    "updatedAt": "2026-02-21T11:23:54.951Z",
+    "userId": "18bllxrlpmlw095kz",
+    "title": "Chest ",
+    "description": "X-ray ",
+    "fileUrl": "",
+    "recordType": "X-Ray"
+  },
+  {
+    "_id": "m0p8y9lctmlw8elue",
+    "createdAt": "2026-02-21T11:24:35.222Z",
+    "updatedAt": "2026-02-21T11:24:35.222Z",
+    "userId": "18bllxrlpmlw095kz",
+    "title": "Medicine ",
+    "description": "Prescribed by consultant ",
+    "fileUrl": "",
+    "recordType": "Prescription"
+  }
+]

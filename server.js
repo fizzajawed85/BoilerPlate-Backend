@@ -4,6 +4,11 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 
 const authRoutes = require('./routes/auth.routes');
+const appointmentRoutes = require('./routes/appointment.routes');
+const userRoutes = require('./routes/user.routes');
+const recordsRoutes = require('./routes/records.routes');
+const dashboardRoutes = require('./routes/dashboard.routes');
+const notificationRoutes = require('./routes/notification.routes');
 
 const app = express();
 
@@ -11,24 +16,31 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-// DB Connection - Simplified for Vercel serverless
-mongoose.connect(process.env.MONGO_URI)
-    .then(() => console.log('MongoDB Connected'))
-    .catch(err => console.log('❌ DB Connection Error:', err.message));
+// DB Connection (Bypassed for local JsonModel)
+// mongoose.connect(process.env.MONGO_URI)...
+console.log('✅ Local JSON Database Mode Active (Bypassing Atlas for Hackathon)');
 
 // Routes
 app.get('/', (req, res) => {
     res.json({
-        message: 'Boilerplate API Server',
+        message: 'Medical Appointment & Records Management API',
         status: 'Running',
         endpoints: {
             auth: '/api/auth',
-            test: '/test'
+            appointments: '/api/appointments',
+            user: '/api/user',
+            records: '/api/records',
+            notifications: '/api/notifications',
         }
     });
 });
 
 app.use('/api/auth', authRoutes);
+app.use('/api/appointments', appointmentRoutes);
+app.use('/api/user', userRoutes);
+app.use('/api/records', recordsRoutes);
+app.use('/api/dashboard', dashboardRoutes);
+app.use('/api/notifications', notificationRoutes);
 
 app.get('/test', (req, res) => {
     const dbStatus = mongoose.connection.readyState === 1 ? 'Connected' : 'Disconnected';
@@ -37,27 +49,18 @@ app.get('/test', (req, res) => {
 
 const PORT = process.env.PORT || 5000;
 
-// Only listen if not in serverless environment (Vercel)
 if (process.env.NODE_ENV !== 'production') {
-    app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+    app.listen(PORT, () => console.log(`🚀 Server running on port ${PORT}`));
 }
 
-// Export for Vercel serverless
 module.exports = app;
 
-// Global Error Handlers
 process.on('unhandledRejection', (err) => {
-    console.log('❌ UNHANDLED REJECTION! Shutting down...');
-    console.log(err.name, err.message);
-    if (process.env.NODE_ENV !== 'production') {
-        process.exit(1);
-    }
+    console.log('❌ UNHANDLED REJECTION!', err.name, err.message);
+    if (process.env.NODE_ENV !== 'production') process.exit(1);
 });
 
 process.on('uncaughtException', (err) => {
-    console.log('❌ UNCAUGHT EXCEPTION! Shutting down...');
-    console.log(err.name, err.message);
-    if (process.env.NODE_ENV !== 'production') {
-        process.exit(1);
-    }
+    console.log('❌ UNCAUGHT EXCEPTION!', err.name, err.message);
+    if (process.env.NODE_ENV !== 'production') process.exit(1);
 });

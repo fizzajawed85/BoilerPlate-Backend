@@ -1,0 +1,21 @@
+[
+  {
+    "_id": "f5o59xn0mmlvzypqj",
+    "createdAt": "2026-02-21T07:28:16.843Z",
+    "updatedAt": "2026-02-21T07:28:16.843Z",
+    "username": "jsonuser",
+    "email": "json@test.com",
+    "password": "$2b$10$HYRTAckuQEm6Sdi6vXyote8wuzZHiqIyBIiYKFAxbIpGhAJCV7tpC"
+  },
+  {
+    "_id": "18bllxrlpmlw095kz",
+    "createdAt": "2026-02-21T07:36:23.939Z",
+    "updatedAt": "2026-02-21T11:00:03.219Z",
+    "username": "Fizza Jawed ",
+    "email": "fizzajawed012@gmail.com",
+    "password": "$2b$10$snBTJSAwlANTboDp05PtYeD5.KFR41KDWtgKohPJuWg6TaLp6IbX2",
+    "phoneNumber": "03122901648",
+    "location": "Pakistan ",
+    "about": "Nothing."
+  }
+]

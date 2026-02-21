@@ -1,0 +1,216 @@
+[
+  {
+    "_id": "5zuws8dnpmlw0acvg",
+    "createdAt": "2026-02-21T07:37:20.044Z",
+    "updatedAt": "2026-02-21T07:37:20.044Z",
+    "name": "Dr. Ahmed Raza",
+    "specialty": "Cardiologist",
+    "imageUrl": "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?q=80&w=400&auto=format&fit=crop",
+    "availableSlots": [
+      {
+        "day": "Monday",
+        "time": "09:00"
+      },
+      {
+        "day": "Monday",
+        "time": "10:00"
+      },
+      {
+        "day": "Wednesday",
+        "time": "14:00"
+      }
+    ]
+  },
+  {
+    "_id": "yde5p7djvmlw0acvg",
+    "createdAt": "2026-02-21T07:37:20.044Z",
+    "updatedAt": "2026-02-21T07:37:20.044Z",
+    "name": "Dr. Sara Khan",
+    "specialty": "Dermatologist",
+    "imageUrl": "https://images.unsplash.com/photo-1594824476967-48c8b964273f?q=80&w=400&auto=format&fit=crop",
+    "availableSlots": [
+      {
+        "day": "Tuesday",
+        "time": "11:00"
+      },
+      {
+        "day": "Thursday",
+        "time": "09:00"
+      }
+    ]
+  },
+  {
+    "_id": "j5ig5bof6mlw0acvg",
+    "createdAt": "2026-02-21T07:37:20.044Z",
+    "updatedAt": "2026-02-21T07:37:20.044Z",
+    "name": "Dr. Usman Ali",
+    "specialty": "Neurologist",
+    "imageUrl": "https://images.unsplash.com/photo-1582750433449-64c6dc6ff9a9?q=80&w=400&auto=format&fit=crop",
+    "availableSlots": [
+      {
+        "day": "Monday",
+        "time": "13:00"
+      },
+      {
+        "day": "Friday",
+        "time": "10:00"
+      }
+    ]
+  },
+  {
+    "_id": "4posifn38mlw0acvg",
+    "createdAt": "2026-02-21T07:37:20.044Z",
+    "updatedAt": "2026-02-21T07:37:20.044Z",
+    "name": "Dr. Nadia Siddiqui",
+    "specialty": "Gynecologist",
+    "imageUrl": "https://images.unsplash.com/photo-1559839734-2b71f1e3c77d?q=80&w=400&auto=format&fit=crop",
+    "availableSlots": [
+      {
+        "day": "Wednesday",
+        "time": "09:00"
+      },
+      {
+        "day": "Friday",
+        "time": "14:00"
+      }
+    ]
+  },
+  {
+    "_id": "02iuf5yzmmlw0acvg",
+    "createdAt": "2026-02-21T07:37:20.044Z",
+    "updatedAt": "2026-02-21T07:37:20.044Z",
+    "name": "Dr. Bilal Hassan",
+    "specialty": "Orthopedic",
+    "imageUrl": "https://images.unsplash.com/photo-1622253692010-333f2da6031d?q=80&w=400&auto=format&fit=crop",
+    "availableSlots": [
+      {
+        "day": "Tuesday",
+        "time": "10:00"
+      },
+      {
+        "day": "Saturday",
+        "time": "09:00"
+      }
+    ]
+  },
+  {
+    "_id": "qo4rkp41nmlw0acvg",
+    "createdAt": "2026-02-21T07:37:20.044Z",
+    "updatedAt": "2026-02-21T07:37:20.044Z",
+    "name": "Dr. Hina Malik",
+    "specialty": "Pediatrician",
+    "imageUrl": "https://images.unsplash.com/photo-1527613426441-4da17471b66d?q=80&w=400&auto=format&fit=crop",
+    "availableSlots": [
+      {
+        "day": "Monday",
+        "time": "15:00"
+      },
+      {
+        "day": "Thursday",
+        "time": "11:00"
+      }
+    ]
+  },
+  {
+    "_id": "6emsu3kxpmlw0acvg",
+    "createdAt": "2026-02-21T07:37:20.044Z",
+    "updatedAt": "2026-02-21T07:37:20.044Z",
+    "name": "Dr. Faisal Qureshi",
+    "specialty": "General Physician",
+    "imageUrl": "https://images.unsplash.com/photo-1612531388300-1c05d7cb6a08?q=80&w=400&auto=format&fit=crop",
+    "availableSlots": [
+      {
+        "day": "Monday",
+        "time": "08:00"
+      },
+      {
+        "day": "Tuesday",
+        "time": "08:00"
+      },
+      {
+        "day": "Wednesday",
+        "time": "08:00"
+      }
+    ]
+  },
+  {
+    "_id": "k8j9l0m1n2o3p4q5r",
+    "name": "Dr. Zainab Abidi",
+    "specialty": "Optometrist",
+    "imageUrl": "https://images.unsplash.com/photo-1599566150163-29194dcaad36?q=80&w=400&auto=format&fit=crop",
+    "availableSlots": [
+      {
+        "day": "Monday",
+        "time": "11:00"
+      },
+      {
+        "day": "Wednesday",
+        "time": "11:00"
+      }
+    ]
+  },
+  {
+    "_id": "s6t7u8v9w0x1y2z3a",
+    "name": "Dr. Kamran Akmal",
+    "specialty": "Dentist",
+    "imageUrl": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=400&auto=format&fit=crop",
+    "availableSlots": [
+      {
+        "day": "Tuesday",
+        "time": "02:00"
+      },
+      {
+        "day": "Thursday",
+        "time": "02:00"
+      }
+    ]
+  },
+  {
+    "_id": "b4c5d6e7f8g9h0i1j",
+    "name": "Dr. Maria B",
+    "specialty": "Psychiatrist",
+    "imageUrl": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=400&auto=format&fit=crop",
+    "availableSlots": [
+      {
+        "day": "Wednesday",
+        "time": "03:00"
+      },
+      {
+        "day": "Friday",
+        "time": "03:00"
+      }
+    ]
+  },
+  {
+    "_id": "l2m3n4o5p6q7r8s9t",
+    "name": "Dr. Omer Saeed",
+    "specialty": "Radiologist",
+    "imageUrl": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=400&auto=format&fit=crop",
+    "availableSlots": [
+      {
+        "day": "Monday",
+        "time": "10:00"
+      },
+      {
+        "day": "Wednesday",
+        "time": "10:00"
+      }
+    ]
+  },
+  {
+    "_id": "u0v1w2x3y4z5a6b7c",
+    "name": "Dr. Fatima Jinnah",
+    "specialty": "Oncologist",
+    "imageUrl": "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?q=80&w=400&auto=format&fit=crop",
+    "availableSlots": [
+      {
+        "day": "Tuesday",
+        "time": "09:00"
+      },
+      {
+        "day": "Friday",
+        "time": "09:00"
+      }
+    ]
+  }
+]
